@@ -1,0 +1,41 @@
+.createSelectCategory {
+  /* position in top left of container */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.createSelectCategory .category {
+  position: relative;
+  width: calc(10vw - 20px);
+  height: calc(10vw - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.createSelectCategory .categoryIcon {
+  position: absolute;
+}
+
+.categoryIcon svg {
+  transition: all .1s ease-in-out;
+  font-size: 400%;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* on hover category change size of svg */
+.category:hover .categoryIcon svg {
+  font-size: 500%;
+}

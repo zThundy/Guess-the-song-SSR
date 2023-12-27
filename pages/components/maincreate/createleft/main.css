@@ -1,0 +1,92 @@
+@import url("./category.css");
+@import url("./genere.css");
+@import url("./buttons.css");
+@import url("./keyframes.css");
+
+.createLeftContainer {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: .5rem auto;
+  /* background: rgb(255, 200, 112); */
+  background: linear-gradient(126deg, rgba(255, 200, 112, 1) 0%, rgba(255, 213, 112, 1) 36%, rgba(255, 227, 112, 1) 100%);
+  border-radius: .5rem 0 0 .5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+}
+
+.createSelectContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4rem);
+  background-color: rgba(204, 102, 0, 1);
+  border-radius: 1rem;
+  box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin: 1rem auto 0 auto;
+  padding: .8rem;
+  border: .2rem solid rgba(255, 169, 41, 1);
+}
+
+.categoryScrollButtonRight {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .1s ease-in-out;
+}
+
+.categoryScrollButtonRight svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.categoryScrollButtonRight:hover {
+  background: #fff;
+}
+
+.categoryScrollButtonLeft {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .1s ease-in-out;
+}
+
+.categoryScrollButtonLeft svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.categoryScrollButtonLeft:hover {
+  background: #fff;
+}
+
+.createSelectArrowDown {
+  position: absolute;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1rem solid white;
+  cursor: pointer;
+  bottom: calc(100% + .3rem);
+  animation: popup .3s ease-in-out;
+}

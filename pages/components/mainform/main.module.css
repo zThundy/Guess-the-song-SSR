@@ -1,0 +1,65 @@
+@keyframes poupFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form {
+  background-color: white;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+  align-items: center;
+  z-index: 4;
+  transition: width 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 1600px) {
+  .form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 85%;
+  }
+}
+
+.animate {
+  animation-timing-function: cubic-bezier(0.57, 0.4, 0.55, 1.17);
+  animation: poupFromBottom 1s 1.2s forwards;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  justify-content: space-around;
+  margin: 1rem 0 1rem 0;
+}

@@ -1,0 +1,96 @@
+
+
+<svg width="1922" height="232" viewBox="0 0 1922 232" xmlns="http://www.w3.org/2000/svg">
+  <style>
+  :root {
+    --wave-color: rgb(255, 169, 84);
+
+    --wave-opacity: 0.2;
+    --wave-opacity-2: 0.3;
+    --wave-opacity-3: 0.4;
+    --wave-opacity-4: 0.5;
+    }
+
+    .wave {
+      fill: var(--wave-color);
+      fill-opacity: var(--wave-opacity);
+      animation: wave 40s 0s linear infinite;
+    }
+
+    .wave2 {
+      fill: var(--wave-color);
+      fill-opacity: var(--wave-opacity-2);
+      animation: wave2 35s 0s linear infinite;
+    }
+
+    .wave3 {
+      fill: var(--wave-color);
+      fill-opacity: var(--wave-opacity-3);
+      animation: wave3 30s 0s linear infinite;
+    }
+
+    .wave4 {
+      fill: var(--wave-color);
+      fill-opacity: var(--wave-opacity-4);
+      animation: wave4 25s 0s linear infinite;
+    }
+
+    @keyframes wave {
+      0% {
+        transform: translate(0%, 0%);
+      }
+
+      100% {
+        transform: translate(120%, 0%);
+      }
+    }
+
+    @keyframes wave2 {
+      0% {
+        transform: translate(0%, 10%);
+      }
+
+      100% {
+        transform: translate(110%, 10%);
+      }
+    }
+
+    @keyframes wave3 {
+      0% {
+        transform: translate(0%, 20%);
+      }
+
+      100% {
+        transform: translate(140%, 20%);
+      }
+    }
+
+    @keyframes wave4 {
+      0% {
+        transform: translate(0%, 30%);
+      }
+
+      100% {
+        transform: translate(150%, 30%);
+      }
+    }
+  </style>
+
+  <defs>
+    <path id='sineWave' d="M2 231.5H1920.5C1841.34 170.484 1795.5 108.203 1710.5 155.269C1655 186.001 1640.5 190.501 1579.5 190.501C1532 190.501 1504 180.501 1449 137.674C1325.29 41.343 1193 7.34467 1132.5 2.00009C1075.5 -3.03529 958 6.50055 846 95.0006C791.351 138.183 741.5 144.5 724.5 144.5C710 144.5 651 144.501 598 107.001C381.852 -45.9346 314.522 58.5775 2 231.5Z" /> 
+    <path id='sineWave2' d="M2 231.5H1920.5C1841.34 170.484 1795.5 108.203 1710.5 155.269C1655 186.001 1640.5 190.501 1579.5 190.501C1532 190.501 1504 180.501 1449 137.674C1325.29 41.343 1193 7.34467 1132.5 2.00009C1075.5 -3.03529 958 6.50055 846 95.0006C791.351 138.183 741.5 144.5 724.5 144.5C710 144.5 651 144.501 598 107.001C381.852 -45.9346 314.522 58.5775 2 231.5Z" /> 
+    <path id='sineWave3' d="M2 231.5H1920.5C1841.34 170.484 1795.5 108.203 1710.5 155.269C1655 186.001 1640.5 190.501 1579.5 190.501C1532 190.501 1504 180.501 1449 137.674C1325.29 41.343 1193 7.34467 1132.5 2.00009C1075.5 -3.03529 958 6.50055 846 95.0006C791.351 138.183 741.5 144.5 724.5 144.5C710 144.5 651 144.501 598 107.001C381.852 -45.9346 314.522 58.5775 2 231.5Z" /> 
+    <path id='sineWave4' d="M2 231.5H1920.5C1841.34 170.484 1795.5 108.203 1710.5 155.269C1655 186.001 1640.5 190.501 1579.5 190.501C1532 190.501 1504 180.501 1449 137.674C1325.29 41.343 1193 7.34467 1132.5 2.00009C1075.5 -3.03529 958 6.50055 846 95.0006C791.351 138.183 741.5 144.5 724.5 144.5C710 144.5 651 144.501 598 107.001C381.852 -45.9346 314.522 58.5775 2 231.5Z" /> 
+  </defs>
+  <use class="wave" href="#sineWave" />
+  <use class="wave" x="-120%" href="#sineWave" />
+
+  <use class="wave2" href="#sineWave2" />
+  <use class="wave2" x="-110%" href="#sineWave2" />
+
+  <use class="wave3" href="#sineWave3" />
+  <use class="wave3" x="-140%" href="#sineWave3" />
+
+  <use class="wave4" href="#sineWave4" />
+  <use class="wave4" x="-150%" href="#sineWave4" />
+</svg>

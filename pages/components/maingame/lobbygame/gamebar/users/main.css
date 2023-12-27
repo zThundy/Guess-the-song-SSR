@@ -1,0 +1,51 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: calc(100% - 2.2rem);
+  border-radius: 1rem;
+  background-color: rgba(255, 174, 94, 1);
+  margin: 0 0 .2rem 0;
+  padding: 1rem 1rem;
+  transition: all .1s ease-in-out;
+}
+
+.user:hover {
+  background-color: rgba(255, 189, 124, .8);
+}
+
+.self {
+  background-color: rgba(255, 213, 171, .8);
+}
+
+.self:hover {
+  background-color: rgba(255, 227, 200, .8);
+}
+
+.user .avatar {
+  position: relative;
+  justify-self: flex-end;
+
+  margin: 0 1rem 0 0;
+  width: 4rem;
+  height: 4rem;
+  color: black;
+  background-color: white;
+}
+
+.user .userData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.user .guessed {
+  box-sizing: border-box;
+  border: 5px solid rgb(112, 255, 112);
+}
+
+.user .unguessed {
+  box-sizing: border-box;
+  border: 5px solid rgb(255, 112, 112);
+}
